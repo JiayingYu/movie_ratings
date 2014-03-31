@@ -1,8 +1,8 @@
 /*load table movie_ratings*/
 DROP TABLE IF EXISTS movie_ratings;
 CREATE TABLE movie_ratings (
-	user_id varchar(3),
-	item_id varchar(4),
+	user_id int(3),
+	item_id int(4),
 	rating int(1),
 	time_stamp varchar(20),
 	PRIMARY KEY (time_stamp),
@@ -16,7 +16,7 @@ LOAD DATA LOCAL INFILE 'u.data'
 /*load table movie_items*/
 DROP TABLE IF EXISTS movie_items;
 CREATE TABLE movie_items (
-	id varchar(4),
+	id int(4),
 	title varchar(255),
 	release_date char(11),
 	video_release_date char(11),
@@ -51,7 +51,7 @@ LINES TERMINATED BY '\n';
 /*load table user*/ 
 DROP TABLE IF EXISTS user;
 CREATE TABLE user (
-	id varchar(3),
+	id int(3),
 	age int(2),
 	gender char(1),
 	occupation varchar(20),
