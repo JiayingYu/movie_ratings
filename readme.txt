@@ -1,5 +1,14 @@
-data source:
-http://grouplens.org/datasets/movielens/
+Assignment#3 for Database Design and Web Implementation
+
+requirements:
+1. Select a dataset in either a .TXT or a .CSV file format (text file that is comma-delimited,tab-delimited or other standard plain text format).
+
+2. Write a .SQL script to import the data into MySQL.
+
+3. Write 10 queries to analyse your data.
+
+
+data source: http://grouplens.org/datasets/movielens/
 
 This dataset contains 3 tables: movie_ratings, movie_items, user. They correspond to the following 3 original data files.
 
